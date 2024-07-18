@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<services>
+    <cloudstreamsCollectionKeys serviceName="WmCloudStreams.RestVS">
+        <servicesKeys>
+            <keyDetails collectionKey="productManagement.CloudConnectorService:DeleteProductInSFDC" connectorServiceName="productManagement.CloudConnectorService:DeleteProductInSFDC"/>
+            <keyDetails collectionKey="productManagement.CloudConnectorService:GetAllProduct" connectorServiceName="productManagement.CloudConnectorService:GetAllProduct"/>
+            <keyDetails collectionKey="productManagement.CloudConnectorService:UpdateProductExternalIDinSFDC" connectorServiceName="productManagement.CloudConnectorService:UpdateProductExternalIDinSFDC"/>
+            <keyDetails collectionKey="productManagement.CloudConnectorService:UpdateProductINSFDC" connectorServiceName="productManagement.CloudConnectorService:UpdateProductINSFDC"/>
+            <keyDetails collectionKey="productManagement.CloudConnectorService:createProduct" connectorServiceName="productManagement.CloudConnectorService:createProduct"/>
+            <keyDetails collectionKey="productManagement.CloudConnectorService:getAllAccountinSFDC" connectorServiceName="productManagement.CloudConnectorService:getAllAccountinSFDC"/>
+            <keyDetails collectionKey="productManagement.CloudConnectorService:getSpecificProductData" connectorServiceName="productManagement.CloudConnectorService:getSpecificProductData"/>
+        </servicesKeys>
+    </cloudstreamsCollectionKeys>
+</services>
