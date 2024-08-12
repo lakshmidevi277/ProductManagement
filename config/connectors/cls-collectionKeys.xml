@@ -9,6 +9,9 @@
             <keyDetails collectionKey="productManagement.CloudConnectorService:createProduct" connectorServiceName="productManagement.CloudConnectorService:createProduct"/>
             <keyDetails collectionKey="productManagement.CloudConnectorService:getAllAccountinSFDC" connectorServiceName="productManagement.CloudConnectorService:getAllAccountinSFDC"/>
             <keyDetails collectionKey="productManagement.CloudConnectorService:getSpecificProductData" connectorServiceName="productManagement.CloudConnectorService:getSpecificProductData"/>
+            <keyDetails collectionKey="productManagement.CloudConnectorService:new_cloudservice" connectorServiceName="productManagement.CloudConnectorService:new_cloudservice"/>
+            <keyDetails collectionKey="productManagement.SalesforceMarketoFlow:marketo_lead_CCS" connectorServiceName="productManagement.SalesforceMarketoFlow:marketo_lead_CCS"/>
+            <keyDetails collectionKey="productManagement.SalesforceMarketoFlow:sf_lead_ccs" connectorServiceName="productManagement.SalesforceMarketoFlow:sf_lead_ccs"/>
         </servicesKeys>
     </cloudstreamsCollectionKeys>
 </services>

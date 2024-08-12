@@ -3,17 +3,17 @@
 <Values version="2.0">
   <value name="node_type">CloudConnectionNode</value>
   <value name="node_subtype">unknown</value>
-  <value name="node_nsName">productManagement.SFDCRESTConn:sfdcRESTconnV1</value>
+  <value name="node_nsName">MarketoConn:marketoTestConn</value>
   <value name="node_pkg">ProductManagement</value>
   <value name="is_public">false</value>
   <value name="cloudNodeVersion">1</value>
   <record name="cloudNodeProperties" javaclass="com.wm.util.Values">
     <number name="connectionNodeVersion" type="Integer">1</number>
-    <value name="connectorID">com.softwareag.cloudstreams.salesforce.rest_v53</value>
-    <value name="providerName">WmSalesforceRESTProvider</value>
+    <value name="connectorID">com.softwareag.cloudstreams.marketo_v1</value>
+    <value name="providerName">WmMarketoProvider</value>
     <value name="providerConnectionType">sagcloud</value>
     <record name="connectionGroupProperties" javaclass="com.wm.util.Values">
-      <value name="cn.providerUrl">https://softwareag7-dev-ed.my.salesforce.com</value>
+      <value name="cn.providerUrl">https://972-EQB-963.mktorest.com</value>
       <value name="cn.connectTimeout">30000</value>
       <value name="cn.readTimeout">30000</value>
       <value name="cn.socketStaleCheck">true</value>
@@ -29,35 +29,32 @@
       <value name="cn.keystoreAlias"></value>
       <value name="cn.clientKeyAlias"></value>
       <value name="cn.hostnameVerifier">org.apache.http.conn.ssl.DefaultHostnameVerifier</value>
-      <value name="cn.keepAliveInterval">300000</value>
+      <value name="cn.keepAliveInterval">-1</value>
       <value name="cn.idleTimeout">-1</value>
       <value name="cn.enableCompression">false</value>
       <value name="cn.enableSNI">true</value>
       <value name="cn.sniServerName"></value>
-      <value name="oauth.consumerId">3MVG9wt4IL4O5wvIADNKl03CbBmCQKcAkAbkFDcpaTXkyVfv7X1O4s2cklJGvkgxFTHWN6GBLsMx_IKubmOL5</value>
-      <value name="oauth.consumerSecret">productManagement.SFDCRESTConn:sfdcRESTconnV1.oauth.consumerSecret</value>
-      <value name="oauth.accessToken">productManagement.SFDCRESTConn:sfdcRESTconnV1.oauth.accessToken</value>
-      <value name="oauth_v20.authorizationServerUrl">https://login.salesforce.com/services/oauth2/authorize</value>
-      <value name="oauth_v20.authenticationServerUrl">https://login.salesforce.com/services/oauth2/token</value>
-      <value name="oauth_v20.instanceURL">https://softwareag7-dev-ed.my.salesforce.com</value>
+      <value name="oauth.consumerId">060e14b1-be5a-4e47-bf93-26013b00afa6</value>
+      <value name="oauth.consumerSecret">MarketoConn:marketoTestConn.oauth.consumerSecret</value>
+      <value name="oauth.accessToken">MarketoConn:marketoTestConn.oauth.accessToken</value>
+      <value name="oauth_v20.instanceURL"></value>
       <value name="oauth_v20.refreshAccessToken">true</value>
-      <value name="oauth_v20.refreshToken">productManagement.SFDCRESTConn:sfdcRESTconnV1.oauth_v20.refreshToken</value>
-      <value name="oauth_v20.accessTokenRefreshURL">https://login.salesforce.com/services/oauth2/token</value>
-      <value name="oauth_v20.accessTokenRefreshURLRequest">URL Query String</value>
-      <value name="oauth_v20.accessTokenRefreshCustomESBService"></value>
+      <value name="oauth_v20.refreshToken">MarketoConn:marketoTestConn.oauth_v20.refreshToken</value>
+      <value name="oauth_v20.accessTokenRefreshURL">https://972-EQB-963.mktorest.com/identity/oauth/token</value>
+      <value name="oauth_v20.accessTokenRefreshURLRequest">Custom ESB Service</value>
+      <value name="oauth_v20.accessTokenRefreshCustomESBService">wmmarketo_v1.refreshToken:customRefreshToken</value>
       <value name="oauth_v20.authorizationHeaderPrefix">Bearer</value>
-      <value name="oauth_v20.scope">offline_access api refresh_token</value>
-      <value name="cx.grant_type">refresh_token</value>
+      <value name="cx.grant_type">client_credentials</value>
     </record>
     <array name="passmanHandles" type="value" depth="1">
-      <value>productManagement.SFDCRESTConn:sfdcRESTconnV1.oauth.consumerSecret</value>
-      <value>productManagement.SFDCRESTConn:sfdcRESTconnV1.oauth.accessToken</value>
-      <value>productManagement.SFDCRESTConn:sfdcRESTconnV1.oauth_v20.refreshToken</value>
+      <value>MarketoConn:marketoTestConn.oauth.consumerSecret</value>
+      <value>MarketoConn:marketoTestConn.oauth.accessToken</value>
+      <value>MarketoConn:marketoTestConn.oauth_v20.refreshToken</value>
     </array>
     <record name="connectionManagerProperties" javaclass="com.wm.util.Values">
       <value name="poolable">true</value>
       <value name="minimumPoolSize">1</value>
-      <value name="maximumPoolSize">10</value>
+      <value name="maximumPoolSize">100</value>
       <value name="poolIncrementSize">1</value>
       <value name="blockTimeout">1000</value>
       <value name="expireTimeout">1000</value>
